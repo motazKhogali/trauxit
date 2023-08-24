@@ -7,6 +7,7 @@ async function createUser(userName,password){
         name:userName,password:password,user_id:len
     });
     await closeCon();
+    return true;
 }
 
 async function findUser(userName){
